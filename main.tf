@@ -72,8 +72,8 @@ resource "aws_route" "peer-route" {
 }
 #in the above code need to add default vpcs network range in destination_cidr_block
 
-resource "aws_route" "peer-route" {
-  route_table_id = var.default_vpc_rt
-  destination_cidr_block    = var.cidr_block
-  vpc_peering_connection_id = aws_vpc_peering_connection.peer.id
-}
+# resource "aws_route" "peer-route" {
+#   route_table_id = var.default_vpc_rt
+#   destination_cidr_block    = var.cidr_block
+#   vpc_peering_connection_id = aws_vpc_peering_connection.peer.id
+# }
